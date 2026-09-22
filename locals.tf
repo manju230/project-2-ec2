@@ -10,4 +10,9 @@ locals {
     Location    = "NA"
     BU          = "Finance"
   }
+  az_map = {
+    "ap-south-1a" = "az1"
+    "ap-south-1b" = "az2"
+    "ap-south-1c" = "az3"
+  }
 }
