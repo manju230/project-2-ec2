@@ -72,8 +72,6 @@ resource "aws_instance" "app_server" {
 # Elastic IP
 # -------------------
 resource "aws_eip" "app_eip" {
-  vpc = true
-
   tags = merge(local.comman_tags, {
     Name = "${local.prefix}-app-eip"
   })
